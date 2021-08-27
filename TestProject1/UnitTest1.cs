@@ -9,7 +9,7 @@ namespace TestProject1
         [TestMethod]
         public void ValidateFirstName_ReturnTrue()
         {
-            string FirstName = "Nilakhi";
+            string FirstName = "Rahul";
             Patterns pattern = new Patterns();
             bool result = pattern.IsValidFirstName(FirstName);
             Assert.IsTrue(result);
@@ -25,7 +25,7 @@ namespace TestProject1
         [TestMethod]
         public void ValidateEmail_ReturnTrue()
         {
-            string Email = "riyan@gmail.com";
+            string Email = "Rahul@gmail.com";
             Patterns pattern = new Patterns();
             bool result = pattern.IsValidEmail(Email);
             Assert.IsTrue(result);
@@ -33,7 +33,7 @@ namespace TestProject1
         [TestMethod]
         public void ValidatePhoneNo_ReturnTrue()
         {
-            string Phone = "91 9778333462";
+            string Phone = "91 9772346265";
             Patterns pattern = new Patterns();
             bool result = pattern.IsValidPhoneNo(Phone);
             Assert.IsTrue(result);
