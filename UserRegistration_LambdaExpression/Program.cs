@@ -6,6 +6,7 @@ namespace UserRegistration_LambdaExpression
     {
         static void Main(string[] args)
         {
+            Patterns pattern = new Patterns();
            
         }
     }
