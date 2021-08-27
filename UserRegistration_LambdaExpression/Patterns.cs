@@ -79,14 +79,18 @@ namespace UserRegistration_LambdaExpression
             while (!flag);
         }
 
-        public bool IsValidSampleEmail(string SampleEmail)
+        public bool IsValidSampleEmail(string sampleemail)
         {
-            bool flag = (Regex.IsMatch(SampleEmail, Regex_email));
-            if (flag == true)
-                return true;
-            else
-                return false;
-
+            bool flag;
+            do
+            {
+                flag = (Regex.IsMatch(sampleemail, Regex_email));
+                if (flag == true)
+                    return true;
+                else
+                    return false;
+            }
+            while (!flag);
         }
     }
 }
